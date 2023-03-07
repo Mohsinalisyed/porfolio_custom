@@ -1,14 +1,16 @@
 import React from 'react'
+import { Spinner } from 'react-activity'
 interface Props{
   onClick?:()=>void,
-  strTitle?:string
+  strTitle?:string,
+  loading?:boolean,
 }
-const Button:React.FC<Props> = ({strTitle,onClick}) => {
+const Button:React.FC<Props> = ({strTitle,onClick,loading}) => {
   
   return (
        <div className='from-btn'>
        <button type="submit" className='btn-comp' onClick={onClick}>
-            {strTitle}
+            {!loading ?strTitle :<Spinner size={20}/>}
       
         </button> 
         

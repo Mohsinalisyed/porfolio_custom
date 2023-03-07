@@ -1,9 +1,8 @@
 .main-content{
     
     .main{
-    width: 100%;
-    height:93vh;
-    max-width: 1440px;
+    width: 90%;
+    height:100vh;
     margin: 0 auto;
     background: no-repeat center center fixed;
     background-size: cover;
@@ -35,14 +34,14 @@
     
 }
 .typewriter {
-	width: 6.5ch;
+	width: 10ch;
 	white-space: nowrap;
 	overflow: hidden;
 	animation:  1s step-start , 
     text 1s steps(10) alternate ;
 }
 .h3-typewriter{
-    width: 9.5ch;
+    width: 20ch;
 	white-space: nowrap;
 	overflow: hidden;
 	animation:  1s step-start , 
@@ -54,7 +53,7 @@
     width: 0; 
   }
 	100% { 
-    width: 9.5ch; 
+    width: 20ch; 
   }
 }
 @keyframes fadeInAnimation {
@@ -71,7 +70,7 @@
     width: 0; 
   }
 	100% { 
-    width: 6.5ch; 
+    width: 10ch; 
   }
 }
 

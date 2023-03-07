@@ -19,12 +19,12 @@ const CV = () => {
         <div className='CV'>
             <h1> CV</h1>
             <div className='Cv-img'>
-            <img id="myImage" src="/img/Cv.jpg" alt="My Image" className='img-fluid'/>
+            <img id="myImage" src="/img/Cv.jpg"  className='img-fluid' alt="" />
+           
+            </div>
             <div className='pt-5'>
             <Button onClick={downloadPdf} strTitle='Download as PDF'></Button>
             </div>
-            </div>
-            
         </div>
        </div>
   )

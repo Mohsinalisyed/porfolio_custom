@@ -6,9 +6,8 @@
         margin: 0 auto;
         padding-top: 55px;
     }
-    .loadersp{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    tr,td,.th{
+      border:  red solid 2px;
+     text-align: center;
     }
 }

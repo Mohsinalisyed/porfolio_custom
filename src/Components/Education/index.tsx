@@ -16,7 +16,7 @@ const Education = () => {
         <Card
         institution='University Of Lahore Islamabad Campus'
         field='BSCS'
-        degree={`Bacholer's Computer Science`}
+        degree={`BS Computer Science`}
         grade='Grade A'
         startDate='Sep-2018'
         endDate='July-2022'

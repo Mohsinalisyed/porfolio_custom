@@ -2,14 +2,14 @@
 
   .hero {
     width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     align-items: baseline;
     
   }
   .hero-sidebar {
-    padding: 75px 40px 20px 40px;
+    padding: 120px 40px 20px 40px;
+    width: 300px;
     position: fixed;
     height: 100%;
     overflow:auto;
