@@ -1,0 +1,21 @@
+.main-contact{
+    .contact{
+        width: 100%;
+        max-width: 1440px;
+        margin: 0px auto;
+        padding: 10px;
+    }
+   .sec-contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+   }
+   .cal-sec{
+    border: none;
+   background-color: #e6ecec;
+   }
+   .cal-sec span{ 
+    padding: 0 10px;
+   }
+    
+}

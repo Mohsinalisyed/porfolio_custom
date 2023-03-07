@@ -1,0 +1,22 @@
+.main-edu{
+    .edu{
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 10px;
+      
+    }
+    .edu-card{
+        display: flex;
+        justify-content:space-evenly;
+    }
+    @media only screen and (max-width: 600px) {
+        .edu-card{
+            flex-direction: column;
+            align-content: space-evenly;
+            
+                    }
+      }
+       
+    
+}

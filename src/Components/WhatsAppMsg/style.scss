@@ -1,0 +1,43 @@
+.communication{
+    .title{
+       text-align: center;
+    }
+    .whatsApp-input{
+        margin-top: 10px;
+    width: 100%;
+    padding: 20px;
+    border: 0;
+    border-radius: 25px;
+    font-family: "Assistant", sans-serif;
+    font-family: "Rajdhani", sans-serif;
+
+    }
+    .whatsApp-textfeild{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 25px;
+    font-family: "Assistant", sans-serif;
+    font-family: "Rajdhani", sans-serif;
+    }
+
+    
+    .whatsApp-btn button{
+        width: 100%;
+        padding: 10px;
+        border: 0;
+        border-radius: 25px;
+        background-color: #2AF18E;
+        margin-top: 10px;
+        font-family: "Assistant", sans-serif;
+       font-family: "Rajdhani", sans-serif;
+    }
+    textarea:active,textarea:focus{
+        border: 0;
+        outline: 0;
+    }
+   button:active,button:focus{
+        border: 0;
+        outline: 0;
+    }
+}

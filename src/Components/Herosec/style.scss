@@ -1,0 +1,64 @@
+.main-hero {
+
+  .hero {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    
+  }
+  .hero-sidebar {
+    padding: 75px 40px 20px 40px;
+    position: fixed;
+    height: 100%;
+    overflow:auto;
+    background-color: #130921;
+    color: white;
+   
+  }
+  .profile-img ,.img-set{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+ 
+  }
+.myimg{
+border-radius: 100%;
+height: 145px;
+width: 145px;
+
+}
+  .detail-sec {
+    margin-top: 55px;
+    width: 100%;
+    margin-left: 230px;
+   
+    
+  }
+  
+@media only screen and (max-width:770px){
+  .hero {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    
+    
+  }
+  .hero-sidebar {
+ position: static;
+ width: 100%;
+  }
+  .detail-sec {
+    margin: 0px;
+    padding: 10px;
+    
+  }
+  .profile-img {
+   margin: auto;
+ 
+  }
+  
+}
+  
+}

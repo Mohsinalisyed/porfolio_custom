@@ -1,0 +1,31 @@
+.main-proj{
+    .proj{
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+  .slide-sec{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding-top: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 20px;
+    width: 98%;
+    margin: auto;
+  }
+  .container{
+    padding:5px 5px 0 5px;
+    margin:0 auto;
+    
+  }
+  .proj-desc{
+    padding: 30px;
+    text-align: center;
+    font-size: large;
+
+  }
+}
