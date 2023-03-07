@@ -1,10 +1,11 @@
 .feild-sec{
-    width: 50%;
+    width: 70%;
     margin:20px auto;
 }
 .from-btn{
     width: 50%;
     margin:20px auto;
+    color: #4B535B;
 }
 .input-feild{
     width: 100%;
@@ -14,6 +15,7 @@
     border-radius: 25px;
     font-family: "Assistant", sans-serif;
   font-family: "Rajdhani", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .input-feild:active,
 .input-feild:focus,
@@ -21,7 +23,7 @@
 .text-feild:focus,
 .btn-comp:active,
 .btn-comp:focus{
-    border: 2px solid blue;
+    border: 0;
     outline: 0;
 }
 .text-feild{
@@ -31,18 +33,24 @@
     border-radius: 25px;
     font-family: "Assistant", sans-serif;
   font-family: "Rajdhani", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .btn-comp{
+    
     width: 100%;
     padding: 10px;
     border: 0;
     display: flex;
+    margin: 100px 10px;
     justify-content: center;
     text-align: center;
     border-radius: 25px;
-    background-color: #2AF18E;
+    color: #fff;
+    font-weight: bold;
+    background-color: #4B535B;
     font-family: "Assistant", sans-serif;
    font-family: "Rajdhani", sans-serif;
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .table{
 border-collapse: collapse;

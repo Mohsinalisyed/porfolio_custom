@@ -4,6 +4,7 @@ import Contact from '../Contact'
 import CV from '../CV'
 import Education from '../Education'
 import Experience from '../Experience'
+import Footer from '../Footer'
 import Main from '../Main'
 import Project from '../Project'
 import Skill from '../Skill'
@@ -19,6 +20,7 @@ const CompWrap = () => {
     <CV/>
     <Project/>
     <Contact/>
+    <Footer/>
     </>
   )
 }

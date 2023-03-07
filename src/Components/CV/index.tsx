@@ -19,7 +19,7 @@ const CV = () => {
         <div className='CV'>
             <h1> CV</h1>
             <div className='Cv-img'>
-            <img id="myImage" src="/img/Cv.jpg"  className='img-fluid' alt="" />
+            <img id="myImage" src="/img/Cv.png"  className='img-fluid' alt="" />
            
             </div>
             <div className='pt-5'>

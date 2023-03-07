@@ -49,7 +49,7 @@ const WhatsMsg = () => {
               required
             />
           </div>
-          <div className="message app" style={{ marginTop: "1.5em" }}>
+          <div className="message app" >
             <textarea
               placeholder="Hi! Send a message From Web WhatsApp...."
               name="message"

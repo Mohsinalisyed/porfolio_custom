@@ -10,7 +10,7 @@ const Education = () => {
             <h1>Education</h1>
             <div className="container bootstrap snippets bootdeys">
     <div className="row">
-        <div className="col-md-4 col-sm-6 content-card">
+        <div className="col-md-4 col-sm-12 content-card">
         
         <AnimationOnScroll animateIn="animate__bounceIn">
         <Card
@@ -24,7 +24,7 @@ const Education = () => {
         />
        </AnimationOnScroll>
         </div> 
-        <div className="col-md-4 col-sm-6 content-card">
+        <div className="col-md-4 col-sm-12 content-card">
         <AnimationOnScroll animateIn="animate__bounceIn">
   
              <Card
@@ -37,7 +37,7 @@ const Education = () => {
         />
        </AnimationOnScroll>
         </div> 
-        <div className="col-md-4 col-sm-6 content-card">
+        <div className="col-md-4 col-sm-12 content-card">
         <AnimationOnScroll animateIn="animate__bounceIn">
         <Card 
         field='CS'

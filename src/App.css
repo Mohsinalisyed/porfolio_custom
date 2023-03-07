@@ -11,13 +11,19 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE/Edge */
   user-select: none;
-  background-color: #fff;
+  background-image: url('https://preview.redd.it/hnci2nqjgj151.png?width=1125&format=png&auto=webp&s=9278a54d731a8695970d7512457786c3a275a064');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+  color: #fff;
   
 }
 
 p {
   font-family: "Assistant", sans-serif;
   font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
 }
 #navigation > div:hover {
   text-decoration: underline;
@@ -31,7 +37,7 @@ p {
   font-family: "Golos Text", sans-serif;
 }
 h1 {
-  color: #0693e3;
+  color: #fff;
   font-family: "Source Serif Pro", serif;
   font-size: 50px;
   font-weight: bold;
@@ -57,7 +63,7 @@ h3 {
 label {
   font-size: 18px;
   font-family: "Golos Text", sans-serif;
-  color: #0693e3;
+  color: #646464;
 }
 .grade {
   color: #0693e3;
@@ -66,4 +72,16 @@ label {
 }
 a {
   cursor: pointer;
+}
+@media (max-width:400px) {
+  h1{
+    font-size: 30px;
+  }
+  p{
+    font-size: 16px;
+  }
+  h3{
+    font-size: 24px;
+  }
+  
 }

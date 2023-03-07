@@ -1,17 +1,18 @@
 .main-CV{
     .CV{
-        width: 80%;
+        width: 98%;
         margin: 0 auto;
         padding: 50px 10px;
-       
+        max-width: 1440px;
        
        
     }
     .Cv-img{
         width: 100%;
         margin:0 auto;
+
         display: flex;
         justify-content: center;
-        padding: 3px 50px;
+        padding: 20px 50px;
     }
 }

@@ -9,7 +9,7 @@ const HeroSec = () => {
         <div className='hero'>
             <div className='hero-sidebar'>
               <div className='profile-img'>
-                 {/* <img src='img/myimg.jpg' className='img-fluid img-set' alt=''/> */}
+                 <img src='img/myimg.jpg' className='img-fluid img-set' alt=''/>
              </div>
               <Home/>
             </div>

@@ -1,13 +1,15 @@
 .main-content{
     
     .main{
-    width: 90%;
+   width: 98%;
     height:100vh;
     margin: 0 auto;
-    background: no-repeat center center fixed;
-    background-size: cover;
     display: flex;
     flex-direction: column;
+     .react-img{
+        display: flex;
+        justify-content: center;
+    }
     }
     .main-text{
         height: 50%;
@@ -18,7 +20,9 @@
             padding-left: 10%;
             
         }
+        
     }
+   
 .dev {
     display: flex;
     justify-content:flex-end;
@@ -37,15 +41,15 @@
 	width: 10ch;
 	white-space: nowrap;
 	overflow: hidden;
-	animation:  1s step-start , 
-    text 1s steps(10) alternate ;
+	animation:  2s step-start , 
+    text 2s steps(10) alternate ;
 }
 .h3-typewriter{
     width: 20ch;
 	white-space: nowrap;
 	overflow: hidden;
-	animation:  1s step-start , 
-    htext 2s steps(10) alternate ;
+	animation:  2s step-start , 
+    htext 3s steps(10) alternate ;
 }
 
 @keyframes htext {

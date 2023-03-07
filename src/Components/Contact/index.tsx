@@ -66,7 +66,7 @@ const Contact = () => {
         <div className="contact-feild">
           <p>{status && renderAlert()}</p>
           <form onSubmit={handleSubmit}>
-            <h4 className="text-center grade">Send Message On Email</h4>
+            <h3 className="text-center grade">Send Message On Email</h3>
             <InputFeild
               value={values.fullName}
               handleChange={handleChange}
@@ -99,23 +99,27 @@ const Contact = () => {
             />
             <Button strTitle="Send"  loading={loading}/>
           </form>
+         
         </div>
         <div className="sec-contact">
-          <button className="cal-sec">
-            <a href="tel:+923085153201">
-              Call Me{" "}
+         <div className="sec-call">
+         <button className="cal-sec bg-secondary ">
+            <a href="tel:+923085153201" className="text-light">
+              Call Me
               <span>
                 <HiPhone />
               </span>
             </a>
           </button>
-          <div className="">
+         </div>
+          <div className="whasts-sec">
             <ModalComp buttonLabel="WhatsApp">
               <WhatsMsg />
             </ModalComp>
           </div>
         </div>
       </div>
+     
     </div>
   );
 };

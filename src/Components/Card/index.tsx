@@ -19,7 +19,7 @@ const Card: React.FC<EducationProps> = ({ institution, degree, field, startDate,
           <div className="content">
               <h6 className="category">{degree}</h6>
               <p>{field}</p>
-              <h5 className="title"><a href="#">{institution}</a></h5>
+              <h5 className="title"><a href="###">{institution}</a></h5>
               <h5 className='grade'>{grade}</h5>
               <p className="description"><span>{startDate}</span><span>{endDate}</span></p>
           </div>

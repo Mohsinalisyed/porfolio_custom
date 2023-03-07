@@ -11,16 +11,19 @@ const Main = () => {
   return (
     <>
       <div className="main-content">
-        <div className="main" style={{ backgroundImage: "url(img/react.png)" }}>
+        <div className="main" >
           <div className="main-text">
             <h1 className={inView ? "typewriter" : ""} ref={ref}>
               Hi !!!
             </h1>
             <br />
             <h3 className={inView ? "h3-typewriter" : ""} ref={ref}>
-              I am{" "}
+              I am
             </h3>
             <br />
+          </div>
+          <div className="react-img">
+            <img src="/logo192.png" alt=""/>
           </div>
           <div className="dev dev-typewriter" ref={ref}>
             {inView && (

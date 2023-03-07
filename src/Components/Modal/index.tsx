@@ -9,7 +9,7 @@ const ModalComp = (props:any) => {
 
   return (
     <div>
-      <Button color="success" onClick={toggle}>
+      <Button color="primary" onClick={toggle}>
         <span className="whats-app-icon"><SiWhatsapp/></span>  {props.buttonLabel}
       </Button>
       <Modal

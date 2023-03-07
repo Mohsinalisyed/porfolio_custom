@@ -1,7 +1,8 @@
 .Main-header{
     position: fixed;
     width: 100%;
-    background-color: #0693e3;
+    background-color:  #646464;
+   
     z-index: 1000;
     .Header{
     width:100% ;
@@ -11,7 +12,7 @@
     .navbar-toggler{
         width: 47px;
         height: 34px;
-        background-color: #0693e3;
+        background-color: transparent;
         border:none;
     }
     .navbar-toggler .line{
@@ -19,19 +20,21 @@
         float: left;
         height: 2px;
         background-color: #fff;
-        margin-bottom: 5px;
+        margin:2px;
     }
     a{
         color: white;
         font-family: "Assistant", sans-serif;
         font-family: "Rajdhani", sans-serif;
-        font-size: 16px;
+        font-size: 20px;
+        
         
     }
     .protfolio-text{
-      font-size: 20px;
+      font-size: 28px;
       margin-right: 20px;
       display: flex;
+      padding-left: 90px ;
       justify-content: center;
       align-items: center;
       font-weight: 600;
@@ -39,16 +42,25 @@
       font-family: 'Satisfy', cursive;
     }
     .protfolio-text span{
-      color: black;
+      color: #63CBEB;
 
       
+    }
+    .nav-item{
+      padding-left: 45px;
+      padding-right: 20px;
     }
     button:active,button:focus{
       border: 0;
       outline: 0;
     }
-  
+    @media (max-width:768px) {
+      .nav-item{padding: 0;}
+      .protfolio-text{padding: 0;
+      }
+    }
 }
+
 
   .visible {
     /* display: flex; */
