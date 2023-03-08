@@ -12,6 +12,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Header />
+       
         <motion.div className="progres" style={{ scaleX: scrollYProgress }} />
         <Routes>
           <Route path="/" element={<HeroSec />}></Route>

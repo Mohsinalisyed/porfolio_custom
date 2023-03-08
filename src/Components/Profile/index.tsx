@@ -2,6 +2,8 @@ import React from 'react'
 import './style.scss'
 
 const Profile=()=>{
+
+   
     return (
         <div className='main-profile'>
             <div className='profile'>
@@ -14,6 +16,7 @@ const Profile=()=>{
                     <h4>Cnic:<span>61101-7731767-1</span></h4>
                     <h4>Dob:<span>05-Dec-1999</span></h4>
                  </div>
+                
             </div>
             </div>
     )

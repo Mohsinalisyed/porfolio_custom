@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaBitbucket, FaGithub } from "react-icons/fa";
+import { FaBitbucket, FaLinkedinIn } from "react-icons/fa";
 import { SiNetlify } from "react-icons/si";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
@@ -85,14 +85,14 @@ const Header = () => {
                     <Tooltip id="bitbucket" />
                     <a
                       className="nav-link px-3"
-                      href="###"
-                      data-tooltip-id="github"
-                      data-tooltip-content="Github"
+                      href="https://www.linkedin.com/in/mohsin-ali-syed-10a16b215"
+                      data-tooltip-id="linkedin"
+                      data-tooltip-content="LinkedIn"
                       data-tooltip-place="top"
                     >
-                      <FaGithub />
+                      <FaLinkedinIn />
                     </a>
-                    <Tooltip id="github" />
+                    <Tooltip id="linkedin" />
                     <a
                       className="nav-link"
                       href="https://famous-conkies-d36fd3.netlify.app"

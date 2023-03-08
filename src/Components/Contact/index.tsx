@@ -97,10 +97,11 @@ const Contact = () => {
               label="Your message here"
               name="message"
             />
-            <Button strTitle="Send"  loading={loading}/>
+            
           </form>
          
         </div>
+        <Button strTitle="Send"  loading={loading}/>
         <div className="sec-contact">
          <div className="sec-call">
          <button className="cal-sec bg-secondary ">

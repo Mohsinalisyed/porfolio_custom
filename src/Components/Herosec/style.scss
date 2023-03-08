@@ -15,7 +15,10 @@
     overflow:auto;
     background-color:  #646464;;
     color: white;
-   
+   @media (max-width:768px) {
+    display: none;
+    
+   }
   }
   .profile-img ,.img-set{
     width: 150px;
@@ -31,7 +34,7 @@ width: 145px;
 
 }
   .detail-sec {
-    margin-top: 55px;
+    margin-top: 70px;
     width: 100%;
     margin-left: 300px;
     
@@ -47,6 +50,7 @@ width: 145px;
   .hero-sidebar {
  position: static;
  width: 100%;
+ 
   }
   .detail-sec {
     margin: 0px;
