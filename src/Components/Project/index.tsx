@@ -28,11 +28,12 @@ const Project = () => {
         <div className=' container'>
         <Slide>
          {slideImages.map((slideImage, index)=> (
-        <>
+       
            
             <div key={index}>
+            <h5 className='text-center' >Goto :<a href={slideImage.caption} className='pl-3'>{slideImage.caption}</a></h5>
               <div style={{  'backgroundImage': `url(${slideImage.url})` }} className='slide-sec' >
-              <h5 >Goto :<a href={slideImage.caption} className='pl-3'>{slideImage.caption}</a></h5>
+        
               </div>
               <div className='proj-desc' >
                 <p>
@@ -40,7 +41,7 @@ const Project = () => {
                 </p>
               </div>
             </div>
-        </>
+        
           ))} 
         </Slide>
         </div>

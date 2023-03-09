@@ -58,7 +58,6 @@ const Contact = () => {
       [e.target.name]: e.target.value,
     }));
   };
-  console.log(loading);
   return (
     <div className="main-contact">
       <div className="contact">

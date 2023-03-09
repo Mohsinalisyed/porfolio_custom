@@ -6,23 +6,12 @@ import ReviewForm from './ReviewForm';
 
 const initialReviews = [
   {
-    rating: 4,
-    review: 'Very nice carpet.',
-    name: 'Mehmet',
-    date: '5/8/2020',
+    rating: 0,
+    review: '',
+    name: '',
+    date: '',
   },
-  {
-    rating: 5,
-    review: 'Excellent.',
-    name: 'Carla',
-    date: '5/10/2020',
-  },
-  {
-    rating: 1,
-    review: 'Most expensive carpet that I have seen ever,Maaaan.',
-    name: 'Jan',
-    date: '7/10/2020',
-  },
+ 
 ];
 
 function MainReview () {

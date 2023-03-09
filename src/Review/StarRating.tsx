@@ -1,6 +1,5 @@
 import React, { memo } from 'react';
 import Rating from 'react-rating';
-
 const StarRating = memo(({ value, size, color, ...rest }:any) => {
   return (
     <Rating

@@ -1,5 +1,8 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import StarRating from './StarRating';
+import { useDispatch } from 'react-redux';
+import  { addData } from '../Redux/slice';
+
 const initialFormState = { name: '', review: '', rating: 0 };
 interface Iprops{
   setVisible:(value: React.SetStateAction<boolean>) => void
@@ -17,10 +20,10 @@ reviews: {
 }[]
 }
 const ReviewForm:React.FC<Iprops>= ({ setVisible, setReviews, reviews }) => {
- 
+  const dispatch=useDispatch()
   const [formState, setFormState] = useState(initialFormState);
   const [disabled, setDisabled] = useState(true);
-
+const todaydate= new Date().toLocaleDateString('en-US')
   const { name, review, rating } = formState;
 
   function handleSubmit(e:any) {
@@ -31,11 +34,10 @@ const ReviewForm:React.FC<Iprops>= ({ setVisible, setReviews, reviews }) => {
     ]);
     setVisible(false);
     setFormState(initialFormState);
-
-    
     // setDisabled(true);
+    dispatch(addData({name:name,date:todaydate,rating:rating ,review:review,}))
   }
-
+console.log(addData.name)
   function handleChange(e:ChangeEvent<HTMLInputElement>) {
     setFormState({ ...formState, [e.target.name]: e.target.value });
   }
