@@ -1,40 +1,32 @@
 .Main-header{
     position: fixed;
     width: 100%;
-    background-color:  #646464;
-   
     z-index: 1000;
     .Header{
     width:100% ;
     margin: 0 auto;
     color: white;
     }
-    .navbar-toggler{
-        width: 47px;
-        height: 34px;
-        background-color: transparent;
-        border:none;
-    }
-    .navbar-toggler .line{
-        width: 100%;
-        float: left;
-        height: 2px;
-        background-color: #fff;
-        margin:2px;
-    }
+    
     a{
         color: white;
         font-family: "Assistant", sans-serif;
         font-family: "Rajdhani", sans-serif;
         font-size: 20px;
+        border: none;
         
         
     }
+    .navbar {
+     
+      background-color:  #646464;
+    }
+   
     .protfolio-text{
       font-size: 28px;
-      margin-right: 20px;
+      width: 250px;
+      margin: 0% auto;
       display: flex;
-      padding-left: 90px ;
       justify-content: center;
       align-items: center;
       font-weight: 600;
@@ -49,16 +41,22 @@
     .nav-item{
       padding-left: 45px;
       padding-right: 20px;
+      margin: 0;
     }
+   
     button:active,button:focus{
       border: 0;
       outline: 0;
     }
-    @media (max-width:768px) {
-      .nav-item{padding: 0;}
-      .protfolio-text{padding: 0;
-      }
+   @media (max-width:992px) {
+    .protfolio-text{
+      width: 100%;
+   
     }
+    .navbar{
+      background-color:  transparent;
+    }
+   }
     
 }
 

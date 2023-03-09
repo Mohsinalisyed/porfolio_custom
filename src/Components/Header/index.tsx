@@ -4,11 +4,16 @@ import { SiNetlify } from "react-icons/si";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
+import styled from "styled-components";
 import "./style.scss";
+interface iprops {
+  isOpen?: boolean;
+}
 const Header = () => {
   const navigate = useNavigate();
   const [position, setPosition] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       let moving = window.pageYOffset;
@@ -27,25 +32,20 @@ const Header = () => {
     <>
       <div className={` Main-header ${cls}`}>
         <div className="Header">
-          <nav className="navbar navbar-expand-lg ">
-            <a className="navbar-brand protfolio-text" href="###">
+          <nav className="navbar navbar-expand-lg">
+           <div className="end">
+           <a className="navbar-brand protfolio-text" href="###">
               <span>P</span>ort<span>F</span>olio
             </a>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarText"
-              aria-controls="navbarText"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="line"></span>
-              <span className="line"></span>
-              <span className="line"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarText">
-              <ul className="navbar-nav mr-auto">
+           </div>
+            <NavbarToggler className={!isOpen ? 'collapsed' : ''} onClick={() => setIsOpen(!isOpen)}>
+      <Line />
+      <Line />
+      <Line />
+    </NavbarToggler>
+    <Menu isOpen={isOpen}>
+         <div >
+         <ul className="navbar-nav " >
                 <li className="nav-item active">
                   <NavLink to="/" className="nav-link">
                     Home
@@ -66,8 +66,9 @@ const Header = () => {
                   </NavLink>
                 </li>
               </ul>
-              <span className=" ">
-                <ul className="navbar-nav mr-auto ">
+         </div >
+              <div>
+                <ul className="navbar-nav  ">
                   <li className="nav-item d-flex">
                     <a
                       className="nav-link"
@@ -101,13 +102,75 @@ const Header = () => {
                     <Tooltip id="netlify" />
                   </li>
                 </ul>
-              </span>
-            </div>
+              </div>
+           </Menu>
           </nav>
         </div>
       </div>
     </>
   );
 };
+const NavbarToggler = styled.button`
+display: none;
 
+  @media (max-width: 992px) {
+    display: block;
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    position: relative;
+    width: 30px;
+    padding: 0;
+  
+  }
+`;
+const Menu = styled.div<iprops>`
+ 
+  display:flex;
+  width:100%;
+  justify-content:space-between;
+  align-items: center;
+  position: relative;
+ 
+  background-color:  #646464;
+  @media (max-width: 992px) {
+    overflow: hidden;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    left: ${({ isOpen }) => (isOpen ? '0' : '-110%')};
+    transition: left 1s ease-in-out;
+    width: 100%;
+    background-color:#646464;
+    height:auto;
+  }
+`;
+const Line = styled.span`
+  background-color: #fff;
+  height: 3px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: block;
+  opacity: 1;
+  position: relative;
+  transition: all 0.35s ease-out;
+  transform-origin: center left;
+  width: 25px;
+
+  &:nth-child(1) {
+    margin-top: 0.3em;
+  }
+
+  ${NavbarToggler}:not(.collapsed) & {
+    &:nth-child(1) {
+      transform: translate(15%, -33%) rotate(45deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: translate(15%, 33%) rotate(-45deg);
+    }
+  }
+`;
 export default Header;

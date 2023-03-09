@@ -23,7 +23,7 @@ const Main = () => {
             <br />
           </div>
           <div className="react-img">
-            <img src="/logo192.png" alt=""/>
+            <img src="/logo192.png" alt="" className="imglogo" />
           </div>
           <div className="dev dev-typewriter" ref={ref}>
             {inView && (
