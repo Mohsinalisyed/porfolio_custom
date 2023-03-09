@@ -16,7 +16,7 @@ interface Props {
 const ReviewComp= ({ average, ratingsAndReviews }: Props) => {
   return (
     <Card
-      header="Review Detail"
+      header="REVIEWS"
       rating={average}
       reviews={ratingsAndReviews}
     />

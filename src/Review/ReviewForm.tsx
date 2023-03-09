@@ -1,7 +1,7 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
+import { addData } from '../Redux/slice';
 import StarRating from './StarRating';
 import { useDispatch } from 'react-redux';
-import  { addData } from '../Redux/slice';
 
 const initialFormState = { name: '', review: '', rating: 0 };
 interface Iprops{
@@ -20,12 +20,10 @@ reviews: {
 }[]
 }
 const ReviewForm:React.FC<Iprops>= ({ setVisible, setReviews, reviews }) => {
-  const dispatch=useDispatch()
   const [formState, setFormState] = useState(initialFormState);
   const [disabled, setDisabled] = useState(true);
-const todaydate= new Date().toLocaleDateString('en-US')
   const { name, review, rating } = formState;
-
+const dispatch=useDispatch()
   function handleSubmit(e:any) {
     e.preventDefault();
     setReviews([
@@ -35,9 +33,8 @@ const todaydate= new Date().toLocaleDateString('en-US')
     setVisible(false);
     setFormState(initialFormState);
     // setDisabled(true);
-    dispatch(addData({name:name,date:todaydate,rating:rating ,review:review,}))
+    dispatch(addData({name, review, rating, date: new Date().toLocaleDateString('en-US') }));
   }
-console.log(addData.name)
   function handleChange(e:ChangeEvent<HTMLInputElement>) {
     setFormState({ ...formState, [e.target.name]: e.target.value });
   }
@@ -48,21 +45,26 @@ console.log(addData.name)
   }, [name, rating, review]);
 
   return (
-    <div>
-      <StarRating
+    <div className='reviw-formcontainer'>
+     <div className='content-center'>
+     <StarRating
         onChange={(rating:number) => setFormState({ ...formState, rating })}
         value={formState.rating}
       />
+     </div>
       <form className='reviewform' onSubmit={handleSubmit}>
-        <input placeholder='Name' name='name' onChange={handleChange} />
+       <div className='content-center'> <input placeholder='Name' name='name' onChange={handleChange}  />
         <input
           placeholder='Write your review here'
           name='review'
           onChange={handleChange}
-        />
-        <button className='btn' disabled={disabled} type='submit'>
+         
+        /></div>
+       <div className='content-center'>
+       <button className='reviewbtn' disabled={disabled} type='submit'>
           Send
         </button>
+       </div>
       </form>
     </div>
   );

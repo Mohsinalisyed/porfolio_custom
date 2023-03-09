@@ -32,8 +32,8 @@ const Project = () => {
            
             <div key={index}>
             <h5 className='text-center' >Goto :<a href={slideImage.caption} className='pl-3'>{slideImage.caption}</a></h5>
-              <div style={{  'backgroundImage': `url(${slideImage.url})` }} className='slide-sec' >
-        
+              <div >
+        <img src={slideImage.url} alt=''className='slide-sec'/>
               </div>
               <div className='proj-desc' >
                 <p>
