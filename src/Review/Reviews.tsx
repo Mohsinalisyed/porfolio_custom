@@ -20,18 +20,17 @@ const ReviewData=useSelector((state:RootState)=>state.user.review)
      
      
       {ReviewData.map(({ review, name, rating, date }, index) => (
-        <div key={index} className='review'>
-          
+        <div key={index} className='review fd'>
             <div className='review__author'>{name}</div>
             <p className='review__date'>{date}</p>
             <StarRating readonly value={rating} size={15} />
           
           <p className='review__text'>{review}</p>
           
-          
+          <hr style={{border:"1px solid gray",width:"100%"}}/>
         </div>
       ))}
-      <hr style={{border:"1px solid gray",width:"100%"}}/>
+      
     </div>
   );
 };

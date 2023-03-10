@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FaBitbucket, FaLinkedinIn } from "react-icons/fa";
-import { SiNetlify } from "react-icons/si";
+import { FaBitbucket, FaLinkedinIn } from "react-icons/fa/index";
+import { SiNetlify } from "react-icons/si/index";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
@@ -141,6 +141,8 @@ const Menu = styled.div<iprops>`
     left: ${({ isOpen }) => (isOpen ? '0' : '-110%')};
     transition: left 1s ease-in-out;
     width: 100%;
+    margin:0;
+    padding:0;
     background-color:#646464;
     height:auto;
   }
