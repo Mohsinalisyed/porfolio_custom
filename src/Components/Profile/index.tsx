@@ -9,12 +9,12 @@ const Profile=()=>{
             <div className='profile'>
                 <h1>Profile</h1>
                  <div className='profile-content'>
-                    <h4>Name:<span>Mohsin Ali Syed</span></h4>
-                    <h4>Email:<span>shahmohsin873@gmail.com</span></h4>
-                    <h4>Phone:<span>+923085153201</span></h4>
-                    <h4>Address:<span>Gulberg Green Islamabad</span></h4>
-                    <h4>Cnic:<span>61101-7731767-1</span></h4>
-                    <h4>Dob:<span>05-Dec-1999</span></h4>
+                    <h4>Name:<br/><span>Mohsin Ali Syed</span></h4>
+                    <h4>Email: <br/><span>shahmohsin873@gmail.com</span></h4>
+                    <h4>Phone:<br/><span>+923085153201</span></h4>
+                    <h4>Address:<br/><span>Gulberg Green Islamabad</span></h4>
+                    <h4>Cnic:<br/><span>61101-7731767-1</span></h4>
+                    <h4>Dob:<br/><span>05-Dec-1999</span></h4>
                  </div>
                 
             </div>

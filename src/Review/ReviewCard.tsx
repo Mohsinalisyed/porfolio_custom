@@ -4,12 +4,13 @@ import { RootState } from '../Redux/store';
 import StarRating from './StarRating';
  interface Iprops{
   header:string,
-  rating:string,
-  reviews:any
+  
+
  }
-const Card :React.FC<Iprops>= ({ header, rating, reviews }) => {
-  const Rating = useSelector((state:RootState) => state.user.rating);
-  const Star = useSelector((state:RootState) => state.user.star);
+const Card :React.FC<Iprops>= ({ header }) => {
+  const Rating = useSelector((state:RootState) => state.user.reviews);
+  const Star = useSelector((state:RootState) => state.user.average);
+  console.log("Star",Star ,'Rating',Rating)
   return (
     <div className='reviewcard '>
       <div className='card__content'>
@@ -17,7 +18,7 @@ const Card :React.FC<Iprops>= ({ header, rating, reviews }) => {
         <div className='card__review'>
           <StarRating value={Star} readonly size={20} />
           <div data-testid='rating' className='card__label'>
-            {`${Star} | ${Rating|| 0} users rated this!`}
+            {`${Star} | ${Rating.length|| 0} users rated this!`}
           </div>
         </div>
       </div>

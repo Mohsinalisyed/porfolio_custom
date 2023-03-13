@@ -2,17 +2,10 @@ import React from 'react';
 import StarRating from './StarRating';
 import { useSelector } from 'react-redux';
 import { RootState } from '../Redux/store';
-interface Review {
-  review: string;
-  name: string;
-  rating: number;
-  date: string;
-}
-interface ReviewsProps {
-  ratingsAndReviews: Review[];
-}
-const Reviews = ( { ratingsAndReviews }: ReviewsProps) => {
-const ReviewData=useSelector((state:RootState)=>state.user.review)
+
+const Reviews = () => {
+const ReviewData=useSelector((state:RootState)=>state.user.reviews)
+console.log("review length",ReviewData.length)
   return (
     <div className='reviewdata'>
      

@@ -1,24 +1,9 @@
 import React from 'react';
 import Card from './ReviewCard';
-
-interface Review {
-  rating: number;
-  review: string;
-  name: string;
-  date: string;
-}
-
-interface Props {
-  average: string;
-  ratingsAndReviews: Review[];
-}
-
-const ReviewComp= ({ average, ratingsAndReviews }: Props) => {
+const ReviewComp= () => {
   return (
     <Card
       header="REVIEWS"
-      rating={average}
-      reviews={ratingsAndReviews}
     />
   );
 };

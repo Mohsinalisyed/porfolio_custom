@@ -15,7 +15,6 @@ const HeroSec = () => {
             </div>
             <div className='detail-sec'>
             <CompWrap/>
-
             </div>
         </div>
     </div>

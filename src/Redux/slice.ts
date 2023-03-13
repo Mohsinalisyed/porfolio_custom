@@ -1,39 +1,36 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-interface Iprops {
-  rating?: number;
-  name?: string;
-  date?: string;
-  review?:string;
+
+interface IReview {
+  rating: number;
+  name: string;
+  date: string;
+  review:string;
 }
-interface ReviewState {
-  review: Iprops[];
- rating?:number
- star?:string,
-  
+
+interface IReviewState {
+  reviews: IReview[];
+  totalRating: number;
+  average: string;
 }
-const initialState: ReviewState = {
-  review: [],
-  rating:0
- 
+
+const initialState: IReviewState = {
+  reviews: [],
+  totalRating: 0,
+  average: "0.0"
 };
 
-
-export const userSlice = createSlice({
-  name: 'user',
+const reviewSlice = createSlice({
+  name: 'reviews',
   initialState,
   reducers: {
-    addData: (state, action: PayloadAction<Iprops>) => {
-      state.review.push(action.payload); 
-    },
-    addRating:(state, action: PayloadAction<number>) => {
-      state.rating=action.payload; 
-    },
-    addStar:(state, action: PayloadAction<string>) => {
-      state.star=action.payload; 
-    },
-  },
+    addReview(state, action: PayloadAction<IReview>) {
+      state.reviews.push(action.payload);
+      state.totalRating = state.reviews.reduce((acc, { rating }) => acc + rating, 0);
+      state.average = (state.totalRating / state.reviews.length || 0).toFixed(1);
+    }
+  }
+ 
 });
 
-export const { addData,addRating,addStar } = userSlice.actions;
-
-export default userSlice.reducer;
+export const { addReview } = reviewSlice.actions;
+export default reviewSlice.reducer;

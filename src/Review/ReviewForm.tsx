@@ -1,5 +1,5 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
-import { addData } from '../Redux/slice';
+import { addReview } from '../Redux/slice';
 import StarRating from './StarRating';
 import { useDispatch } from 'react-redux';
 
@@ -33,7 +33,7 @@ const dispatch=useDispatch()
     setVisible(false);
     setFormState(initialFormState);
     // setDisabled(true);
-    dispatch(addData({name, review, rating, date: new Date().toLocaleDateString('en-US') }));
+    dispatch(addReview({name, review, rating, date: new Date().toLocaleDateString('en-US') }));
   }
   function handleChange(e:ChangeEvent<HTMLInputElement>) {
     setFormState({ ...formState, [e.target.name]: e.target.value });
