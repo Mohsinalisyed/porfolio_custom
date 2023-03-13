@@ -13,13 +13,8 @@ interface Iprops {
 
 
 function MainReview () {
- 
   const [visible, setVisible] = useState(false);
   const [reviews, setReviews] = useState<Iprops[]>([]);
-
-
-  
- 
   return (
     <div className='reviewcontainer'>
       <Card  header="REVIEWS" />
