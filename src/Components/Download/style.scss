@@ -2,9 +2,16 @@
     .download{
         width: 100%;
         max-width: 1440px;
-        height: 91.5vh;
         margin: 0 auto;
         padding-top: 80px;
     }
+    table {
+        width: 100%;
+        }
+        th, td {
+        text-align:center;
+        padding: 8px;
+        font-size: 24px;
+        }
 
 }

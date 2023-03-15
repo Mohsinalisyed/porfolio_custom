@@ -65,7 +65,7 @@ const Contact = () => {
         <div className="contact-feild">
           <p>{status && renderAlert()}</p>
           <form onSubmit={handleSubmit}>
-            <h3 className="text-center grade">Send Message On Email</h3>
+            <h2 className="text-center grade">Send Message On Email</h2>
             <InputFeild
               value={values.fullName}
               handleChange={handleChange}

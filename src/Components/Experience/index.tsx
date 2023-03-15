@@ -54,7 +54,7 @@ const Experience = () => {
               <h6>Ideofuzion Pvt Ldt</h6>
               {show && (
                 <div>
-                  <h5 className="job-position">Junior React developer</h5>
+                  <h5 className="job-position" >Junior React developer</h5>
                   <p>I am working with Ideofuzion Pvt Ltd.</p>
                   <p>
                     {" "}

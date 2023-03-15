@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Rajdhani&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap"); */
 * {
   box-sizing: border-box;
 }
@@ -15,13 +15,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  color: #fff;
+     color: #fff;
   
 }
 
 p {
-  font-family: "Assistant", sans-serif;
-  font-family: "Rajdhani", sans-serif;
+  font-family: 'Assistant', sans-serif;
+  font-family: 'Climate Crisis', cursive;
   font-size: 20px;
 }
 #navigation > div:hover {
@@ -33,11 +33,11 @@ p {
 }
 #navigation > div {
   font-size: 16px;
-  font-family: "Golos Text", sans-serif;
+  font-family: 'Climate Crisis', cursive;
 }
 h1 {
   color: #fff;
-  font-family: "Source Serif Pro", serif;
+  font-family: 'Climate Crisis', cursive;
   font-size: 50px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -45,7 +45,7 @@ h1 {
 }
 h3 {
   color: #61dbfb;
-  font-family: "Source Serif Pro", serif;
+  font-family: 'Oswald', sans-serif;
   cursor: pointer;
   font-size: 60px;
 }
@@ -61,8 +61,8 @@ h3 {
 }
 label {
   font-size: 18px;
-  font-family: "Golos Text", sans-serif;
-  color: #646464;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
 }
 .grade {
   color: #0693e3;

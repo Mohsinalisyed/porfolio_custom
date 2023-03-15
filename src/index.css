@@ -1,13 +1,14 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Climate Crisis', cursive;
+  font-weight: normal;
+  src: url('../public/fonts/GolosText-Medium.woff');
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Assistant', sans-serif;
+  font-family: 'Climate Crisis', cursive;
+  src: url(../public/fonts/Assistant-Regular.woff);
+}
+@font-face {
+  font-family: 'Oswald', sans-serif;
+  src: url('../public/fonts/Oswald-Bold.woff');
 }
