@@ -8,7 +8,7 @@ const Download = () => {
         <h1>Download</h1>
 
         <div style={{ overflowX: "auto",padding:'10px' }}>
-          <table border={2} style={{border:"3px solid black"}}>
+          <table >
             <tr>
               <th>#id</th>
               <th>Image</th>
@@ -27,7 +27,7 @@ const Download = () => {
                   />
                 </a>
               </td>
-              <td>Smith</td>
+              <td>Matricpulation</td>
               <td> <a href="/img/Cv.png" download>
                 Download
                 </a></td>
@@ -44,7 +44,7 @@ const Download = () => {
                   />
                 </a>
               </td>
-              <td>John</td>
+              <td>Intermediate</td>
               <td> <a href="/img/Cv.png" download>
                 Download
                 </a></td>
@@ -61,14 +61,14 @@ const Download = () => {
                   />
                 </a>
               </td>
-              <td>Watson</td>
+              <td>Bacholer's CS</td>
               <td> <a href="/img/Cv.png" download>
                 Download
                 </a></td>
             </tr>
           </table>
         </div>
-        <h1 className="text-right"><a href='/imgzip.zip' download className="text-dark">Download All</a></h1>
+        <h4 className="text-right"><a href='/imgzip.zip' download className="text-dark">Download All</a></h4>
       </div>
     </div>
   );

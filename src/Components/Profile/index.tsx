@@ -9,6 +9,9 @@ const Profile=()=>{
             <div className='profile'>
                 <h1>Profile</h1>
                  <div className='profile-content'>
+                 <div className='profile-img'>
+                 <img src='img/myimg.jpg' className='img-fluid img-set' alt=''/>
+                 </div>
                     <h4>Name:<br/><span>Mohsin Ali Syed</span></h4>
                     <h4>Email: <br/><span>shahmohsin873@gmail.com</span></h4>
                     <h4>Phone:<br/><span>+923085153201</span></h4>
