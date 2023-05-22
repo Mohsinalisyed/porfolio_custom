@@ -1,0 +1,36 @@
+.main-profile{
+    .profile{
+        width: 100%;
+        margin: 0 auto;
+       
+        
+    }
+    .profile-content{
+        height: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        word-break: break-all;
+        text-align: center;
+        
+    }
+   h4{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: verdana;
+    color: black;
+   }
+   span{
+    font-size: 16px;
+    color: white;
+    padding: 0 2px;
+   }
+}
+.profile-img{
+    height: 120px;
+    width: 120px;
+    margin-bottom: 40px;
+}

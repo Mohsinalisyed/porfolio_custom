@@ -1,0 +1,85 @@
+.main-content{
+    
+    .main{
+   width: 98%;
+    height:100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+     .react-img{
+        display: flex;
+        justify-content: center;
+    }
+    }
+    .main-text{
+        height: 50%;
+        padding-left:5%;
+        padding-top: 30px;
+        position: sticky;
+        h3{
+            padding-left: 10%;
+            
+        }
+      
+        }
+        .imglogo{
+            width: 300px;
+            margin:0 auto;
+            height: auto;
+    }
+   
+.dev {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    height: 50%;
+    padding-right:10% ;
+    
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: sticky;
+    
+}
+.typewriter {
+	width: 10ch;
+	white-space: nowrap;
+	overflow: hidden;
+	animation:  2s step-start , 
+    text 2s steps(10) alternate ;
+}
+.h3-typewriter{
+    width: 20ch;
+	white-space: nowrap;
+	overflow: hidden;
+	animation:  2s step-start , 
+    htext 3s steps(10) alternate ;
+}
+
+@keyframes htext {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width: 20ch; 
+  }
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width: 10ch; 
+  }
+}
+
+}

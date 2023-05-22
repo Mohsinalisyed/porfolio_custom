@@ -1,0 +1,76 @@
+.Main-header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    .Header{
+    width:100% ;
+    margin: 0 auto;
+    color: white;
+    }
+    
+    a{
+        color: white;
+        font-family: "Assistant", sans-serif;
+        font-family: "Rajdhani", sans-serif;
+        font-size: 20px;
+        border: none;
+        
+        
+    }
+    .navbar {
+     
+      background-color:  #646464;
+    }
+   
+    .protfolio-text{
+      font-size: 28px;
+      width: 250px;
+      margin: 0% auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      letter-spacing: 2px;
+      font-family: 'Satisfy', cursive;
+    }
+    .protfolio-text span{
+      color: #63CBEB;
+
+      
+    }
+    .nav-item{
+      padding-left: 45px;
+      padding-right: 20px;
+      margin: 0;
+    }
+   
+    button:active,button:focus{
+      border: 0;
+      outline: 0;
+    }
+   @media (max-width:992px) {
+    .protfolio-text{
+      width: 100%;
+   
+    }
+    .navbar{
+      background-color:  black;
+      height: 70px;
+    }
+   }
+    
+}
+
+
+  .visible {
+    /* display: flex; */
+    top: 0;
+    transition: top 0.4s ease-out;
+  }
+  
+  .hidden {
+    /* display: none; */
+    top: -80px;
+    opacity: 0;
+    transition: top 0.4s ease-out;
+  }

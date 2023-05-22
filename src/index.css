@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Climate Crisis', cursive;
+  font-weight: normal;
+  src: url('../public/fonts/GolosText-Medium.woff');
+}
+@font-face {
+  font-family: 'Assistant', sans-serif;
+  font-family: 'Climate Crisis', cursive;
+  src: url(../public/fonts/Assistant-Regular.woff);
+}
+@font-face {
+  font-family: 'Oswald', sans-serif;
+  src: url('../public/fonts/Oswald-Bold.woff');
+}

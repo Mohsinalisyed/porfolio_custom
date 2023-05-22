@@ -1,0 +1,86 @@
+.main-skill{
+    .skill{
+        width: 98%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 50px 10px;
+       
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        padding: 10px;
+        @media(max-width:768px){
+          grid-template-columns: auto;
+        }
+      }
+      
+      .item {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        border-radius: 30px;
+      }
+      .progress{
+        height: 20px;
+        width: 90%;
+     
+      }
+      #html{
+        animation-name: html;
+        animation-duration: 4s;
+      }
+      #css{
+        animation-name: css;
+        animation-duration: 4s;
+      }
+       #bs{
+        animation-name: bs;
+        animation-duration: 4s;
+      }
+       #js{
+        animation-name: js;
+        animation-duration: 4s;
+      }
+      
+      #ts{
+        animation-name: ts;
+        animation-duration: 4s;
+      }
+      @keyframes html {
+        from {
+        width:0%}
+        to {
+        width:80%
+        }
+      }
+      @keyframes css {
+        from {
+        width:0%}
+        to {
+        width:75%
+        }
+      }
+      @keyframes bs {
+        from {
+        width:0%}
+        to {
+        width:80%
+        }
+      }
+      @keyframes js {
+        from {
+        width:0%}
+        to {
+        width:70%
+        }
+      }
+      @keyframes ts {
+        from {
+        width:0%}
+        to {
+        width:65%
+        }
+      }
+}
