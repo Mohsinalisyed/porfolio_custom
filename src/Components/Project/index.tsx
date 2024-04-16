@@ -24,7 +24,7 @@ const Project = () => {
   return (
     <div className='main-proj'>
         <div className='proj'>
-         <h1>Project</h1>
+         <h2>Project</h2>
         <div className=' container'>
         <Slide>
          {slideImages.map((slideImage, index)=> (

@@ -1,5 +1,4 @@
 .main-hero {
-
   .hero {
     width: 100%;
     margin: 0 auto;
@@ -34,18 +33,16 @@ width: 145px;
 
 }
   .detail-sec {
-    margin-top: 70px;
+    margin-top: 40px;
     width: 100%;
     margin-left: 300px;
-    
   }
   
 @media only screen and (max-width:768px){
   .hero {
     flex-direction: column;
     width: 100%;
-    margin: auto;
-  
+    margin: auto; 
   }
 
   .detail-sec {

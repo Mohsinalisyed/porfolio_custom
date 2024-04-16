@@ -20,7 +20,7 @@ const Experience = () => {
   return (
     <div className="main-exp">
       <div className="exp">
-        <h1>Experience</h1>
+        <h2>Experience</h2>
 
         <div className="card  text-white container1">
           <div className="card-body">

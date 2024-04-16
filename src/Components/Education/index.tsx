@@ -7,7 +7,7 @@ const Education = () => {
   return (
     <div className='main-edu'>
         <div className='edu'>
-            <h1>Education</h1>
+            <h2>Education</h2>
             <div className="container bootstrap snippets bootdeys">
     <div className="row">
         <div className="col-md-4 col-sm-12 content-card">

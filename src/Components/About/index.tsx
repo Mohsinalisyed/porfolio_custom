@@ -4,20 +4,14 @@ const About = () => {
   return (
     <div className='main-about'>
       <div className='about' id='about'>
-        <h1>About</h1>
-
-        <p>
-        
-        I am an energetic and disciplined individual with
-           excellent academic background, having good
-              communication skills. I am looking for a
-               position where I can prove my abilities and can
-                 get excellent career opportunities in your
-                   organization.
-
+        <h2>About</h2>
+        <p>   
+          Experienced Front End Developer proficient in HTML, CSS, JavaScript, Typescript,
+          and React.js, with a track record of optimizing codebase for speed and scalability.
+          Demonstrated expertise in front end tools and technologies, collaborating on diverse projects while adhering to
+          industry standards.
         </p>
-      </div>
-     
+      </div>   
       </div>
   )
 }

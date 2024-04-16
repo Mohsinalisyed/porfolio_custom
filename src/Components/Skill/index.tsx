@@ -9,7 +9,7 @@ const Skill = () => {
   return (
     <div className='main-skill'>
       <div className='skill'>
-            <h1>Skill</h1>
+            <h2>Skills</h2>
             <div className="grid-container">
               <div className='item'>
               <label>Html 5</label>

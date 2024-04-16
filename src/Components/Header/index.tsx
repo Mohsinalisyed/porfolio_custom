@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FaBitbucket, FaLinkedinIn } from "react-icons/fa/index";
 import { SiNetlify } from "react-icons/si/index";
 import { NavLink, useNavigate } from "react-router-dom";
@@ -11,26 +11,10 @@ interface iprops {
 }
 const Header = () => {
   const navigate = useNavigate();
-  const [position, setPosition] = useState(window.pageYOffset);
-  const [visible, setVisible] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      let moving = window.pageYOffset;
-
-      setVisible(position > moving);
-      setPosition(moving);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
-
-  const cls = visible ? "visible" : "hidden";
   return (
     <>
-      <div className={` Main-header ${cls}`}>
+      <div className={` Main-header`}>
         <div className="Header">
           <nav className="navbar navbar-expand-lg">
            <div className="end">

@@ -61,7 +61,7 @@ const Contact = () => {
   return (
     <div className="main-contact">
       <div className="contact">
-        <h1>Contact</h1>
+        <h2>Contact</h2>
         <div className="contact-feild">
           <p>{status && renderAlert()}</p>
           <form onSubmit={handleSubmit}>

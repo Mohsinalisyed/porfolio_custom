@@ -18,7 +18,7 @@ const Main = () => {
             </h1>
             <br />
             <h3 className={inView ? "h3-typewriter" : ""} ref={ref}>
-              I am
+              i am
             </h3>
             <br />
           </div>

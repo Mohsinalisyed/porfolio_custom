@@ -17,12 +17,12 @@ const CV = () => {
   return (
     <div className='main-CV'>
         <div className='CV'>
-            <h1> CV</h1>
+            <h2> CV</h2>
             <div className='Cv-img'>
             <img id="myImage" src="/img/Cv.png"  className='img-fluid' alt="" style={{width:"100%", height:"auto"}}/>
            
             </div>
-            <div className='pt-5'>
+            <div className='pt-3'>
             <Button onClick={downloadPdf} strTitle='Download as PDF'></Button>
             </div>
         </div>
