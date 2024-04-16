@@ -1,78 +1,42 @@
-import React from 'react'
-import './style.scss'
-import {useInView} from  'react-intersection-observer'
+import React from 'react';
+import './style.scss';
+import Skill from './Skills';
+import { FaReact, FaHtml5, FaJava, FaCss3, FaSass, FaFigma, FaGithub, } from "react-icons/fa";
+import { SiRedux, SiTailwindcss, SiStrapi, SiWeb3Dotjs } from "react-icons/si";
+import { MdOutlineImportantDevices, MdLineStyle } from "react-icons/md";
+import { AiOutlineApi } from "react-icons/ai";
+import { TbBrandBitbucket, TbBrandTypescript } from "react-icons/tb";
+import { BsBootstrap } from "react-icons/bs";
+import { TbBrandNextjs } from "react-icons/tb";
 
-const Skill = () => {
-  const {ref,inView}=useInView({
-    threshold:0
-  })
-  return (
-    <div className='main-skill'>
-      <div className='skill'>
-            <h2>Skills</h2>
-            <div className="grid-container">
-              <div className='item'>
-              <label>Html 5</label>
-               <div className="progress" >
-                <div className="progress-bar  bg-secondary"
-                 id={inView?'html':''} role="progressbar"
-                 ref={ref}
-                  style={{width:"80%"}}>
-                   80%
+const SkillsList = () => {
+    return (
+        <div className='main-skill'>
+            <div className='skill'>
+                <h2>Skills</h2>
+                <div className="grid-container">
+                    <Skill skillName="React js" icon={<FaReact />} />
+                    <Skill skillName="Next js" icon={<TbBrandNextjs />} />
+                    <Skill skillName="Redux" icon={<SiRedux />} />
+                    <Skill skillName="HTML5" icon={<FaHtml5 /> }/>     
+                    <Skill skillName="JavaScript" icon={<FaJava />} />
+                    <Skill skillName="TypeScript" icon={<TbBrandTypescript />} />
+                    <Skill skillName="CSS3" icon={<FaCss3 />} />
+                    <Skill skillName="Sass" icon={<FaSass />} />
+                    <Skill skillName="Tailwind Css" icon={<SiTailwindcss />} />
+                    <Skill skillName="Bootstrap" icon={<BsBootstrap />} />
+                    <Skill skillName="Styled components" icon={<MdLineStyle />} />
+                    <Skill skillName="Responsive Design" icon={<MdOutlineImportantDevices />} />
+                    <Skill skillName="Figma" icon={<FaFigma />} />
+                    <Skill skillName="Strapi(cms)" icon={<SiStrapi />} />
+                    <Skill skillName="Api integration" icon={<AiOutlineApi />} />
+                    <Skill skillName="Github" icon={<FaGithub />} />
+                    <Skill skillName="BitBucket" icon={< TbBrandBitbucket />} />
+                    <Skill skillName="Web3" icon={<SiWeb3Dotjs />} />
                 </div>
-              </div>
-               </div>
-               <div className='item'>
-               <label>CSS3</label>
-                 <div className="progress" >
-                <div className="progress-bar ' bg-primary" 
-                id={inView?'css':''} role="progressbar"
-                ref={ref}
-                 style={{width:"75%"}}>
-                   75%
-                </div>
-              </div>
-              </div>
-               <div className='item'>
-               <label>JavaScript</label>
-               <div className="progress" >
-                <div className="progress-bar  bg-warning" 
-                id ={inView?'js':''} 
-                role="progressbar" 
-                ref={ref}
-                style={{width:"70%"}}>
-                   70%
-                </div>
-              </div>
-               </div>
-               <div className='item'>
-               <label>Bootstrap</label>
-               <div className="progress" >
-                <div className="progress-bar  bg-success" 
-                id={inView?'bs':''} role="progressbar" 
-                ref={ref}
-                style={{width:"80%"}}>
-                   80%
-                </div>
-              </div>
-               </div>
-               <div className='item'>
-               <label>TypeScript</label>
-               <div className="progress" >
-                <div className="progress-bar  bg-danger"
-                 id={inView?'ts':''}
-                 ref={ref}
-                 role="progressbar" style={{width:"65%"}}>
-                   65%
-                </div>
-              </div>
-               </div>
-              
-           </div>
-        
-       </div>
-    </div>
-  )
-}
+            </div>
+        </div>
+    );
+};
 
-export default Skill
+export default SkillsList;
