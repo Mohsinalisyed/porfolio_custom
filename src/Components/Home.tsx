@@ -100,7 +100,7 @@ const Home = () => {
             to="/download"
             className={({ isActive }) => (isActive ? "active" : "text-light")}
           >
-            Download
+            Certification
           </RouterLink>
         </div>
       </div>
