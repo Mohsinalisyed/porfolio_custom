@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { FaBitbucket, FaLinkedinIn } from "react-icons/fa/index";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa/index";
 import { SiNetlify } from "react-icons/si/index";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 import styled from "styled-components";
@@ -10,7 +10,7 @@ interface iprops {
   isOpen?: boolean;
 }
 const Header = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -35,7 +35,7 @@ const Header = () => {
                     Home
                   </NavLink>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <a
                     className="nav-link"
                     href="###"
@@ -43,7 +43,7 @@ const Header = () => {
                   >
                     Profile
                   </a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <NavLink to="/certification" className="nav-link">
                     Certification
@@ -56,30 +56,33 @@ const Header = () => {
                   <li className="nav-item d-flex">
                     <a
                       className="nav-link"
-                      href=" https://mohsin__5775@bitbucket.org/mohsin__5775/portfolio.git"
-                      data-tooltip-id="bitbucket"
-                      data-tooltip-content="Bitbucket"
+                      href="https://github.com/Mohsinalisyed?tab=repositories"
+                      data-tooltip-id="github"
+                      data-tooltip-content="Github"
                       data-tooltip-place="top"
+                      target="_blank" rel="noreferrer"
                     >
-                      <FaBitbucket />
+                      <FaGithub />
                     </a>
-                    <Tooltip id="bitbucket" />
+                    <Tooltip id="github" />
                     <a
                       className="nav-link px-3"
                       href="https://www.linkedin.com/in/mohsin-ali-syed-10a16b215"
                       data-tooltip-id="linkedin"
                       data-tooltip-content="LinkedIn"
                       data-tooltip-place="top"
+                      target="_blank" rel="noreferrer"
                     >
                       <FaLinkedinIn />
                     </a>
                     <Tooltip id="linkedin" />
                     <a
                       className="nav-link"
-                      href="https://famous-conkies-d36fd3.netlify.app"
+                      href="https://app.netlify.com/teams/shahmohsin873/overview"
                       data-tooltip-id="netlify"
                       data-tooltip-content="Netlify"
                       data-tooltip-place="top"
+                      target="_blank" rel="noreferrer"
                     >
                       <SiNetlify />
                     </a>
