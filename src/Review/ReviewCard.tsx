@@ -11,7 +11,7 @@ const Card: React.FC<Iprops> = ({ header }) => {
   return (
     <div className="reviewcard ">
       <div className="card__content">
-        <h2 className="card__header">{header}</h2>
+        <h2 className="card__header" style={{color:"black"}}>{header}</h2>
         <div className="card__review">
           <StarRating value={Star} readonly size={20} />
           <div data-testid="rating" className="card__label">

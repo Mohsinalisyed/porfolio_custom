@@ -12,10 +12,10 @@ const Reviews = () => {
           <h2 className="text-center">FEEDBACKS</h2>
           {ReviewData.map(({ review, name, rating, date }, index) => (
             <div key={index} className="review fd">
-              <div className="review__author">{name}</div>
-              <p className="review__date">{date}</p>
+              <div className="review__author" style={{ color: "#61dbfb" }}>{name}</div>
+              <p className="review__date" style={{ color: "green" }}>{date}</p>
               <StarRating readonly value={rating} size={15} />
-              <p className="review__text">{review}</p>
+              <p className="review__text" style={{ color: "#fff" }}>{review}</p>
               <hr style={{ border: "1px solid gray", width: "100%" }} />
             </div>
           ))}
