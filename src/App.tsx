@@ -16,7 +16,7 @@ const App = () => {
         <motion.div className="progres" style={{ scaleX: scrollYProgress }} />
         <Routes>
           <Route path="/" element={<HeroSec />}></Route>
-          <Route path="/download" element={<Download />} />
+          <Route path="/certification" element={<Download />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
        

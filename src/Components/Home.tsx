@@ -97,7 +97,7 @@ const Home = () => {
         </div>
         <div className="text-center my-3">
           <RouterLink
-            to="/download"
+            to="/certification"
             className={({ isActive }) => (isActive ? "active" : "text-light")}
           >
             Certification

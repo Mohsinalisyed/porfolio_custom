@@ -5,18 +5,16 @@ const Download = () => {
   return (
     <div className="main-download">
       <div className="download">
-        <h1>Download</h1>
+        <h2>Certification</h2>
 
         <div style={{ overflowX: "auto",padding:'10px' }}>
           <table >
             <tr>
-              <th>#id</th>
-              <th>Image</th>
-              <th>Degree</th>
+              <th>Certificate</th>
+              <th>Title</th>
               <th>Download</th>
             </tr>
             <tr>
-              <td>1</td>
               <td>
                 <a href="/img/Cv.png" title="Click to Preview" >
                   <img
@@ -27,13 +25,12 @@ const Download = () => {
                   />
                 </a>
               </td>
-              <td>Matricpulation</td>
+              <td>Responsive Web Design</td>
               <td> <a href="/img/Cv.png" download>
                 Download
                 </a></td>
             </tr>
             <tr>
-            <td>2</td>
               <td>
               <a href="/img/Cv.png" title="Click to Preview" >
                   <img
@@ -44,13 +41,12 @@ const Download = () => {
                   />
                 </a>
               </td>
-              <td>Intermediate</td>
+              <td>React Js</td>
               <td> <a href="/img/Cv.png" download>
                 Download
                 </a></td>
             </tr>
             <tr>
-            <td>3</td>
               <td>
               <a href="/img/Cv.png" title="Click to Preview" >
                   <img
@@ -61,14 +57,14 @@ const Download = () => {
                   />
                 </a>
               </td>
-              <td>Bacholer's CS</td>
+              <td>Intership</td>
               <td> <a href="/img/Cv.png" download>
                 Download
-                </a></td>
+              </a>
+              </td>
             </tr>
           </table>
         </div>
-        <h4 className="text-right"><a href='/imgzip.zip' download className="text-dark">Download All</a></h4>
       </div>
     </div>
   );
