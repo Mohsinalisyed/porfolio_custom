@@ -1,15 +1,40 @@
 import React from "react";
-import { Link as ScrollLink } from "react-scroll";
+import { Link as ScrollLink, scroller } from "react-scroll";
+import { useNavigate, useLocation } from "react-router-dom";
 import DownloadIcon from "./DownloadIcon";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavigateAndScroll = (section:any) => {
+    if (location.pathname !== "/") {
+      navigate("/", { replace: true });
+      setTimeout(() => {
+        scroller.scrollTo(section, {
+          duration: 500,
+          delay: 0,
+          smooth: "easeInOutQuart",
+          offset: -75,
+        });
+      }, 0);
+    } else {
+      scroller.scrollTo(section, {
+        duration: 500,
+        delay: 0,
+        smooth: "easeInOutQuart",
+        offset: -75,
+      });
+    }
+  };
+
   return (
     <>
       <div className="text-center my-3">
-      <a href="/img/CV.pdf" download>
-        <DownloadIcon/> Resume
+        <a href="/img/CV.pdf" download>
+          <DownloadIcon /> Resume
         </a>
-        </div>
+      </div>
       <div id="navigation">
         <div className="text-center my-3">
           <ScrollLink
@@ -18,6 +43,7 @@ const Home = () => {
             smooth={true}
             offset={-75}
             duration={500}
+            onClick={() => handleNavigateAndScroll("main")}
           >
             Home
           </ScrollLink>
@@ -29,6 +55,7 @@ const Home = () => {
             smooth={true}
             offset={-75}
             duration={500}
+            onClick={() => handleNavigateAndScroll("about")}
           >
             About
           </ScrollLink>
@@ -40,6 +67,7 @@ const Home = () => {
             smooth={true}
             offset={-75}
             duration={500}
+            onClick={() => handleNavigateAndScroll("skill")}
           >
             Skill
           </ScrollLink>
@@ -51,6 +79,7 @@ const Home = () => {
             smooth={true}
             offset={-75}
             duration={500}
+            onClick={() => handleNavigateAndScroll("edu")}
           >
             Education
           </ScrollLink>
@@ -62,6 +91,7 @@ const Home = () => {
             smooth={true}
             offset={-75}
             duration={500}
+            onClick={() => handleNavigateAndScroll("exp")}
           >
             Experience
           </ScrollLink>
@@ -73,23 +103,14 @@ const Home = () => {
             smooth={true}
             offset={-75}
             duration={500}
+            onClick={() => handleNavigateAndScroll("proj")}
           >
             Project
-          </ScrollLink>
-        </div>
-        <div className="text-center my-3">
-          <ScrollLink
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-75}
-            duration={500}
-          >
-            Contact
           </ScrollLink>
         </div>
       </div>
     </>
   );
 };
+
 export default Home;

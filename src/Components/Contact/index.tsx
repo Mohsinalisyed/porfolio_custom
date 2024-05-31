@@ -96,27 +96,26 @@ const Contact = () => {
               label="Your message here"
               name="message"
             />
-             <Button strTitle="Send"  loading={loading}/>
+            <div className="wrap-btn">
+              <div className="sec-call">
+                <button className="cal-sec bg-secondary ">
+                  <a href="tel:+923085153201" className="text-light">
+                    Call Me
+                    <span>
+                      <HiPhone />
+                    </span>
+                  </a>
+                </button>
+              </div>
+              <Button strTitle="Send Email" loading={loading} />
+              <div className="whasts-sec">
+                <ModalComp buttonLabel="WhatsApp">
+                  <WhatsMsg />
+                </ModalComp>
+              </div>
+            </div>
           </form>
          
-        </div>
-       
-        <div className="sec-contact">
-         <div className="sec-call">
-         <button className="cal-sec bg-secondary ">
-            <a href="tel:+923085153201" className="text-light">
-              Call Me
-              <span>
-                <HiPhone />
-              </span>
-            </a>
-          </button>
-         </div>
-          <div className="whasts-sec">
-            <ModalComp buttonLabel="WhatsApp">
-              <WhatsMsg />
-            </ModalComp>
-          </div>
         </div>
       </div>
      

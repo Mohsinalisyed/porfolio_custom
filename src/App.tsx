@@ -5,8 +5,8 @@ import Download from "./Components/Download";
 import Header from "./Components/Header";
 import HeroSec from "./Components/Herosec";
 import { motion, useScroll } from "framer-motion";
-import Profile from "./Components/Profile";
 import { Spinner } from "react-activity";
+import Contact from "./Components/Contact";
 const Home = lazy(() => import('./Components/Home'));
 
 const App = () => {
@@ -29,7 +29,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HeroSec />}></Route>
             <Route path="/certification" element={<Download />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>  
       </BrowserRouter>
     </div>
