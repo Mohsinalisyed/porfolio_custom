@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.scss";
 import "react-activity/dist/library.css";
+import DownloadIcon from "../DownloadIcon";
 const Download = () => {
   return (
     <div className="main-download">
@@ -27,7 +28,7 @@ const Download = () => {
               </td>
               <td>Responsive Web Design</td>
               <td> <a href="/img/Cv.png" download>
-                Download
+                <DownloadIcon/>
                 </a></td>
             </tr>
             <tr>
@@ -43,7 +44,7 @@ const Download = () => {
               </td>
               <td>React Js</td>
               <td> <a href="/img/Cv.png" download>
-                Download
+                <DownloadIcon />
                 </a></td>
             </tr>
             <tr>
@@ -59,7 +60,7 @@ const Download = () => {
               </td>
               <td>Intership</td>
               <td> <a href="/img/Cv.png" download>
-                Download
+                <DownloadIcon />
               </a>
               </td>
             </tr>

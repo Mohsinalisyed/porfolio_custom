@@ -2,7 +2,6 @@ import React from 'react'
 import MainReview from '../../Review/MainReview '
 import About from '../About'
 import Contact from '../Contact'
-import CV from '../CV'
 import Education from '../Education'
 import Experience from '../Experience'
 import Footer from '../Footer'
@@ -18,7 +17,6 @@ const CompWrap = () => {
     <Skill/>
     <Education/>
     <Experience/>
-    <CV/>
     <Project/>
     <Contact/>
     <MainReview />

@@ -1,11 +1,15 @@
 import React from "react";
-import { NavLink as RouterLink } from "react-router-dom";
-
 import { Link as ScrollLink } from "react-scroll";
+import DownloadIcon from "./DownloadIcon";
 
 const Home = () => {
   return (
     <>
+      <div className="text-center my-3">
+      <a href="/img/CV.pdf" download>
+        <DownloadIcon/> Resume
+        </a>
+        </div>
       <div id="navigation">
         <div className="text-center my-3">
           <ScrollLink
@@ -64,17 +68,6 @@ const Home = () => {
         </div>
         <div className="text-center my-3">
           <ScrollLink
-            to="CV"
-            spy={true}
-            smooth={true}
-            offset={-75}
-            duration={500}
-          >
-            CV
-          </ScrollLink>
-        </div>
-        <div className="text-center my-3">
-          <ScrollLink
             to="proj"
             spy={true}
             smooth={true}
@@ -94,14 +87,6 @@ const Home = () => {
           >
             Contact
           </ScrollLink>
-        </div>
-        <div className="text-center my-3">
-          <RouterLink
-            to="/certification"
-            className={({ isActive }) => (isActive ? "active" : "text-light")}
-          >
-            Certification
-          </RouterLink>
         </div>
       </div>
     </>

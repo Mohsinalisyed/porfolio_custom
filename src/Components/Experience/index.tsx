@@ -57,7 +57,7 @@ const Experience = () => {
           <div className="card-body">
             <div className="">
               <h6 style={{ fontSize: "20px" }}>Techozon Software House</h6>
-              <h5 className="job-position">Front-end Developer</h5>
+              <h5 className="job-position text-center">Front-end Developer</h5>
               {toggle && (
                 <div>
                   <h5 className="job-position">Gulberg Green Islamabad</h5>

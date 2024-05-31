@@ -53,7 +53,7 @@ const Project = () => {
             <div key={index}>
              <h5 className='text-center' >Visit :<a href={slideImage.caption} className='pl-3' target="_blank" rel="noreferrer">{slideImage.caption}</a></h5>
               <div >
-        <img src={slideImage.url} alt=''className='slide-sec' />
+               <img src={slideImage.url} alt=''className='slide-sec' />
               </div>
               <div className='proj-desc' >
                 <h1 style={{fontSize:"32px"}}>
