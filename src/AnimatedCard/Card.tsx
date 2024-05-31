@@ -12,7 +12,7 @@ function CarouselCard({ title, image, currentSlide, currentIndex }: any) {
     });
     return (
         <animated.div
-            style={{ ...styles, height: "fit-content" }}
+            style={{ ...styles, height: "fit-content",cursor:'pointer' }}
             onMouseEnter={() => setShown(true)}
             onMouseLeave={() => setShown(false)}
         >
