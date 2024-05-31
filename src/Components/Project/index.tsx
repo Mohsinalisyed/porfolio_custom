@@ -1,31 +1,31 @@
-import React from 'react'
-import 'react-slideshow-image/dist/styles.css'
-import { Slide } from 'react-slideshow-image';
-import './style.scss'
+import React from 'react';
+import 'react-slideshow-image/dist/styles.css';
+import './style.scss';
+import CarouselCard from '../../AnimatedCard/Card';
+import Carousel3d from '../../AnimatedCard/Carousel3d';
+
 const Project = () => {
   const slideImages = [
     {
       url: 'https://d3q5ph1a1lg1pd.cloudfront.net/1710925782277-8d2c5fc3-86c5-48ce-ad3d-d2439a562d0c.png',
       caption: 'https://thetote.io/',
-      desc:'TOTE'
-      
+      desc: 'TOTE'
     },
     {
       url: 'https://d3q5ph1a1lg1pd.cloudfront.net/1710926275464-352058bb-5214-4044-8cf6-f91ef1adfab0.png',
       caption: 'https://www.gamesfi.live/',
-      desc:'Gamesfi'
+      desc: 'Gamesfi'
     },
     {
       url: 'https://d3q5ph1a1lg1pd.cloudfront.net/1710927711050-9d28665f-59ce-4fb6-990d-82164340f614.png',
       caption: 'https://kwiktrust.com/',
-      desc:'KwikSign'
+      desc: 'KwikSign'
     },
     {
       url: 'https://d3q5ph1a1lg1pd.cloudfront.net/1710927253000-de2a9fc6-e8e4-4ff1-beac-8c7c3c9a73ce.png',
       caption: 'https://www.metastadium.io/',
       desc: 'U-Meta'
-    }, 
-   
+    },
     {
       url: 'https://d3q5ph1a1lg1pd.cloudfront.net/1710927935409-9075699a-46c5-432f-ad6e-c0f7cfdadece.png',
       caption: 'https://www.pixelpaddle.com/',
@@ -42,33 +42,39 @@ const Project = () => {
       desc: 'Portfolio'
     },
   ];
+
+  // Map over the slideImages array to construct the cards array
+  const cards = slideImages.map((slide, index) => ({
+    key: index,
+    content: <CarouselCard title={slide.desc} image={slide.url} />,
+  }));
+
   return (
     <div className='main-proj'>
-        <div className='proj'>
-         <h2>Project</h2>
+      <div className='proj'>
+        <h2>Project</h2>
         <div className=' container'>
-        <Slide>
-         {slideImages.map((slideImage, index)=> (
-           
-            <div key={index}>
-             <h5 className='text-center' >Visit :<a href={slideImage.caption} className='pl-3' target="_blank" rel="noreferrer">{slideImage.caption}</a></h5>
-              <div >
-               <img src={slideImage.url} alt=''className='slide-sec' />
-              </div>
-              <div className='proj-desc' >
-                <h1 style={{fontSize:"32px"}}>
-                   {slideImage.desc}
-                </h1>
+          <div>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                overflow: 'hidden',
+              }}
+            >
+              <div style={{ width: 600, height: '100vh' }}>
+                <Carousel3d
+                  cards={cards}
+                  offset={2}
+                />
               </div>
             </div>
-        
-          ))} 
-        </Slide>
+          </div>
         </div>
+      </div>
+    </div>
+  );
+};
 
-        </div>
-        </div>
-  )
-}
-
-export default Project
+export default Project;

@@ -1,5 +1,4 @@
 import React from 'react'
-import MainReview from '../../Review/MainReview '
 import About from '../About'
 import Education from '../Education'
 import Experience from '../Experience'
@@ -21,7 +20,6 @@ const CompWrap = () => {
         <Education />
         <Experience />
         <Project />
-        <MainReview />
         <Footer />
     </ContentSection>
     </>
