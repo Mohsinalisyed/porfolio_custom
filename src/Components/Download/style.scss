@@ -1,4 +1,8 @@
 .main-download{
+    margin-left: 300px;
+    @media only screen and (max-width: 768px) {
+            margin-left: 0px;
+        }
     .download{
         width: 98%;
         max-width: 1440px;
@@ -16,5 +20,4 @@
             color: #56f;
         }
         }
-
 }

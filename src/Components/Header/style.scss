@@ -13,15 +13,10 @@
         font-family: "Assistant", sans-serif;
         font-family: "Rajdhani", sans-serif;
         font-size: 16px;
-        border: none;
-        
-        
+        border: none;      
     }
-    .navbar {
-     
-      background-color:  #646464;
-    }
-   
+    .navbar { 
+      background-color: black;    }
     .protfolio-text{
       font-size: 28px;
       width: 250px;
@@ -34,9 +29,7 @@
       font-family: 'Satisfy', cursive;
     }
     .protfolio-text span{
-      color: #63CBEB;
-
-      
+      color: #63CBEB;  
     }
     .nav-item{
       padding-left: 45px;
@@ -50,8 +43,7 @@
     }
    @media (max-width:992px) {
     .protfolio-text{
-      width: 100%;
-   
+      width: 100%;  
     }
     .navbar{
       background-color:  black;

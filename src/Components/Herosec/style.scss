@@ -6,32 +6,6 @@
     align-items: baseline;
     overflow: hidden;
   }
-  .hero-sidebar {
-    padding: 120px 0px 20px 0px;
-    width: 300px;
-    position: fixed;
-    height: 100%;
-    overflow:auto;
-    background-color:  #646464;;
-    color: white;
-   @media (max-width:768px) {
-    display: none;
-    
-   }
-  }
-  .profile-img ,.img-set{
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    border-radius: 100%;
- 
-  }
-.myimg{
-border-radius: 100%;
-height: 145px;
-width: 145px;
-
-}
   .detail-sec {
     margin-top: 40px;
     width: 100%;

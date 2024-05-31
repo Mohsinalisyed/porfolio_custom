@@ -16,6 +16,7 @@ const Download = () => {
               <th>Download</th>
             </tr>
             <tr>
+              <td>Responsive Web Design</td>
               <td>
                 <a href="/img/Cv.png" title="Click to Preview" >
                   <img
@@ -26,14 +27,14 @@ const Download = () => {
                   />
                 </a>
               </td>
-              <td>Responsive Web Design</td>
               <td> <a href="/img/Cv.png" download>
                 <DownloadIcon/>
                 </a></td>
             </tr>
             <tr>
+              <td>React Js</td>
               <td>
-              <a href="/img/Cv.png" title="Click to Preview" >
+                <a href="/img/Cv.png" title="Click to Preview" >
                   <img
                     src="/img/Cv.png"
                     alt="EDU_IMG"
@@ -42,12 +43,12 @@ const Download = () => {
                   />
                 </a>
               </td>
-              <td>React Js</td>
               <td> <a href="/img/Cv.png" download>
                 <DownloadIcon />
                 </a></td>
             </tr>
             <tr>
+              <td>Intership</td>
               <td>
               <a href="/img/Cv.png" title="Click to Preview" >
                   <img
@@ -58,7 +59,6 @@ const Download = () => {
                   />
                 </a>
               </td>
-              <td>Intership</td>
               <td> <a href="/img/Cv.png" download>
                 <DownloadIcon />
               </a>

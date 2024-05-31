@@ -29,7 +29,7 @@ const Header = () => {
     </NavbarToggler>
     <Menu isOpen={isOpen}>
          <div >
-         <ul className="navbar-nav " >
+         <ul className="navbar-nav" >
                 <li className="nav-item active">
                   <NavLink to="/" className="nav-link">
                     Home
@@ -112,7 +112,7 @@ display: none;
   }
 `;
 const Menu = styled.div<iprops>`
- 
+ margin-left:35px;
   display:flex;
   width:100%;
   justify-content:space-between;
