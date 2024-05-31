@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./style.scss";
 const Experience = () => {
-  const [toggle, setToggle] = useState(false);
-  const [show, setShow] = useState(false);
+  const [toggle, setToggle] = useState(true);
+  const [show, setShow] = useState(true);
   const handleToggle = () => {
     if (!toggle) {
       setToggle(true);
