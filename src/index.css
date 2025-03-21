@@ -1,14 +1,19 @@
 @font-face {
-  font-family: 'Climate Crisis', cursive;
-  font-weight: normal;
-  src: url('../public/fonts/GolosText-Medium.woff');
+  font-family: 'OpenSans-Bold';
+  font-weight: 700;
+  src: url('../public/fonts/OpenSans-Bold.ttf');
 }
 @font-face {
-  font-family: 'Assistant', sans-serif;
-  font-family: 'Climate Crisis', cursive;
-  src: url(../public/fonts/Assistant-Regular.woff);
+  font-family: 'OpenSans-Bold-Italic';
+  font-weight: 700;
+  src: url('../public/fonts/OpenSans-BoldItalic.ttf');
 }
 @font-face {
-  font-family: 'Oswald', sans-serif;
-  src: url('../public/fonts/Oswald-Bold.woff');
+  font-family: 'OpenSans-Medium';
+  font-weight: 500;
+  src: url('../public/fonts/OpenSans-Medium.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../public/fonts/OpenSans-Light.ttf');
 }

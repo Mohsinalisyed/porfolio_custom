@@ -6,10 +6,10 @@ const About = () => {
       <div className='about' id='about'>
         <h2>About</h2>
         <p>   
-          Experienced Front End Developer proficient in HTML, CSS, JavaScript, Typescript,
-          and React.js, with a track record of optimizing codebase for speed and scalability.
-          Demonstrated expertise in front end tools and technologies, collaborating on diverse projects while adhering to
-          industry standards.
+          2+ year's experienced front-end developer specialized in React.js and Next.js with a robust portfolio of projects
+          evidencing expertise in UI design and development. Skilled in integrating APIs, utilizing state management tools
+          like Redux, and with a solid foundation in responsive design principles. Passionate about creating intuitive and
+          dynamic user experiences, evidenced by successful project outcomes and constant learning.
         </p>
       </div>   
       </div>
